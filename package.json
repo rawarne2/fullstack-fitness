@@ -23,6 +23,8 @@
   "dependencies": {
     "@mapbox/react-native-mapbox-gl": "^6.1.2-beta",
     "expo": "^26.0.0",
+    "haversine": "^1.1.0",
+    "lodash": "^4.17.10",
     "mapbox": "^1.0.0-beta10",
     "react": "16.3.0",
     "react-native": "~0.54.1",
