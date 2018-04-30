@@ -48,7 +48,7 @@ export default class Clock extends Component {
  
   render() {
     return (
-      <View style={{backgroundColor: 'powderblue'}}>
+      <View style={{backgroundColor: 'powderblue', padding: 15, alignItems: 'center'}}>
       <Button title={this.countUp ? 'TAP TO COUNT UP' : 'TAP TO COUNT DOWN'} onPress={this.toggleButton}></Button>
       <View>
       {this.state.countUp ? 
