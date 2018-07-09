@@ -48,7 +48,7 @@ export default class Clock extends Component {
  
   render() {
     return (
-      <View style={{backgroundColor: 'powderblue', padding: 15, alignItems: 'center'}}>
+      <View style={{backgroundColor: 'lightgray', padding: 15, alignItems: 'center'}}>
       <Button title={this.countUp ? 'TAP TO COUNT UP' : 'TAP TO COUNT DOWN'} onPress={this.toggleButton}></Button>
       <View>
       {this.state.countUp ? 
@@ -58,24 +58,24 @@ export default class Clock extends Component {
           options={options}
           getTime={this.getFormattedTime} />
         <TouchableHighlight onPress={this.toggleStopwatch}>
-          <Text style={{fontSize: 25}}>{!this.state.stopwatchStart ? "Start" : "Stop"}</Text>
+          <Text style={{fontSize: 25, alignSelf: 'center'}}>{!this.state.stopwatchStart ? "Start" : "Stop"}</Text>
         </TouchableHighlight>
         <TouchableHighlight onPress={this.resetStopwatch}>
-          <Text style={{fontSize: 25}}>Reset</Text>
+          <Text style={{fontSize: 25, alignSelf: 'center'}}>Reset</Text>
         </TouchableHighlight>
         </View>
         :
-        <View>
+        <View >
         <Timer totalDuration={this.state.totalDuration} msecs start={this.state.timerStart}
           reset={this.state.timerReset}
           options={options}
           handleFinish={handleTimerComplete}
           getTime={this.getFormattedTime} />
         <TouchableHighlight onPress={this.toggleTimer}>
-          <Text style={{fontSize: 25}}>{!this.state.timerStart ? "Start" : "Stop"}</Text>
+          <Text style={{fontSize: 25, alignSelf: 'center'}}>{!this.state.timerStart ? "Start" : "Stop"}</Text>
         </TouchableHighlight>
         <TouchableHighlight onPress={this.resetTimer}>
-          <Text style={{fontSize: 25}}>Reset</Text>
+          <Text style={{fontSize: 25, alignSelf: 'center'}}>Reset</Text>
         </TouchableHighlight>
         </View>
       }

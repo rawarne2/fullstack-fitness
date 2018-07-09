@@ -46,8 +46,4 @@ allow to play in background?
 
 
 
-work on project
-submit fellowship application
-buy Gabby a birthday present
-
 */
